@@ -1,8 +1,6 @@
 import { SocketEvent } from "@constants";
 
-export type TAppContext = {
-	//
-};
+export type TAppContext = undefined;
 
 export type TClientToServerSocketEvent = {
 	[SocketEvent.Hello]: (message: string) => void;
