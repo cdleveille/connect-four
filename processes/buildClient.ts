@@ -15,7 +15,7 @@ const buildConfig: BunBundleBuildConfig = {
 	entrypoints: ["index.html"],
 	swEntrypoint: "sw.ts",
 	copyFolders: ["assets"],
-	copyFiles: ["browserconfig.xml", "favicon.ico", "manifest.json"],
+	copyFiles: ["favicon.ico"],
 	define: { "Bun.env.IS_PROD": `"${IS_PROD}"`, "Bun.env.WS_PORT": `"${Config.WS_PORT}"` },
 	sourcemap: IS_PROD ? "none" : "linked",
 	naming: {

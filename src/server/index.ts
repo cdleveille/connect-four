@@ -3,7 +3,6 @@ import { Elysia, ValidationError } from "elysia";
 import { Env, ErrorMessage, Path } from "@constants";
 import { staticPlugin } from "@elysiajs/static";
 import { Config, initSocket, log, plugins } from "@helpers";
-import { helloRouter } from "@routes";
 
 const { IS_PROD, PORT } = Config;
 
@@ -29,7 +28,6 @@ new Elysia()
 	.use(plugins)
 	.use(staticPlugin({ prefix: "/", assets: Path.Public, noCache: true }))
 	.get("/health", "OK")
-	.group("/hello", app => app.use(helloRouter))
 	.listen({ port: PORT });
 
 log.info(`HTTP server listening on port ${PORT} in ${IS_PROD ? Env.Production : Env.Development} mode`);

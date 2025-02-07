@@ -1,9 +1,7 @@
 import { SocketEvent } from "@constants";
 
 export type TAppContext = {
-	message: string;
-	count: number;
-	setCount: TReactStateSetter<number>;
+	//
 };
 
 export type TClientToServerSocketEvent = {

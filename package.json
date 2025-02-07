@@ -1,7 +1,7 @@
 {
-  "name": "fullstack-bun",
+  "name": "connect-four",
   "version": "1.0.0",
-  "description": "Minimal, performant, type-safe monorepo project template. Bun/Elysia backend, React frontend, Socket.IO bridging the gap.",
+  "description": "",
   "author": "Chris Leveille <cdleveille@gmail.com>",
   "license": "MIT",
   "type": "module",
